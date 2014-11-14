@@ -13,15 +13,6 @@ import org.springframework.data.neo4j.core.GraphDatabase;
 @Configuration
 public class GrailsN4jGraph extends Neo4jConfiguration {
 
-    public GrailsN4jGraph() {
-        setBasePackage("grailsSdn4j");
-    }
-
-    @Bean
-    GraphDatabaseService graphDatabaseService() {
-        return new GraphDatabaseFactory().newEmbeddedDatabase("accessingdataneo4j.db");
-    }
-
     @Autowired
     PersonRepository personRepository;
 
