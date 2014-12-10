@@ -2,11 +2,11 @@ package grailsSdn4j
 
 import grailsSdn4j.GrailsN4jGraph
 
-class TestController {
+class MainController {
 
     GrailsN4jGraph grailsGraph
 
     def index() { 
-	render grailsGraph.testThatWeCanAccessDatabase()
+		render (view: "/index")
 	}
 }

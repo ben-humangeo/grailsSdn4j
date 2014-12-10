@@ -1,11 +1,8 @@
 
 package grailsSdn4j;
 
-import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Transaction;
-import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.neo4j.config.Neo4jConfiguration;
 import org.springframework.data.neo4j.core.GraphDatabase;
@@ -30,7 +27,7 @@ public class GrailsN4jGraph extends Neo4jConfiguration {
         } finally {
             tx.close();
         }
-	return greg.name;
+        return greg.name;
     }
     
 }
