@@ -115,3 +115,59 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+// ******************************************************************************
+//                              CORS Configuration
+// ******************************************************************************
+// Note: If changing custom header names, remember to reflect them here.
+//
+cors.url.pattern        = '/api/*'
+cors.allow.origin.regex ='.*'
+cors.expose.headers     ='content-type,X-hedtech-totalCount,X-hedtech-pageOffset,X-hedtech-pageMaxSize,X-hedtech-message,X-hedtech-Media-Type,X-Request-ID'
+
+
+// ******************************************************************************
+//             RESTful API Custom Response Header Name Configuration
+// ******************************************************************************
+// Uncomment and change to override.
+//
+//restfulApi.header.totalCount  = 'X-hedtech-totalCount'
+//restfulApi.header.pageOffset  = 'X-hedtech-pageOffset'
+//restfulApi.header.pageMaxSize = 'X-hedtech-pageMaxSize'
+//restfulApi.header.message     = 'X-hedtech-message'
+//restfulApi.header.mediaType   = 'X-hedtech-Media-Type'
+
+//restfulApi.header.requestId   = 'X-Request-ID'
+
+// ******************************************************************************
+//             RESTful API 'Paging' Query Parameter Name Configuration
+// ******************************************************************************
+// Uncomment and change to override.
+//
+//restfulApi.page.max    = 'max'
+//restfulApi.page.offset = 'offset'
+// ******************************************************************************
+//                       RESTful API Endpoint Configuration
+// ******************************************************************************
+//
+restfulApiConfig = {
+  //handle any pluralized resource name by mapping it to the singularized service name,
+  //e.g. persons is handled by personService.
+  //Dynamic marshallers/extractors are used.
+  //If you want to whitelist only, remove the anyResource block and replace with
+  //definitions for specific resources.
+  anyResource {
+	representation {
+		mediaTypes = ["application/json"]
+		marshallers {
+			jsonDomainMarshaller {
+				priority = 101
+			}
+			jsonBeanMarshaller {
+				priority = 100
+			}
+		}
+		jsonExtractor {}
+	}
+  }
+}
