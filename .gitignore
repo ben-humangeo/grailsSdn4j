@@ -1,2 +1,4 @@
 accessingdataneo4j.db/
 target/
+target-eclipse/
+plugins/
