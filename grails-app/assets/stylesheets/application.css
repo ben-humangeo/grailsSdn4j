@@ -12,4 +12,10 @@
 *= require_self
 */
 
-body { padding-top: 70px; }
+body {
+	padding: 70px 0;
+}
+
+#querySearch {
+	cursor: pointer;
+}
