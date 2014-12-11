@@ -1,39 +1,34 @@
 package grailsSdn4j.services
 
 import java.util.Map;
+import net.hedtech.restfulapi.PagedResultArrayList
 
 import grails.transaction.Transactional
 
 @Transactional
 class SearchService extends AbstractRestfulService {
 
-	@Override
-	public Object list(Map params) throws Throwable {
-		// TODO Auto-generated method stub
-		return null;
+	def list(Map params) throws Throwable {
+		return new PagedResultArrayList([], [].size())
 	}
 
-	@Override
-	public Object show(Map params) throws Throwable {
-		// TODO Auto-generated method stub
-		return null;
+	def show(Map params) throws Throwable {
+		
 	}
 
-	@Override
-	public Object create(Map content, Map params) throws Throwable {
-		// TODO Auto-generated method stub
-		return null;
+	def create(Map content, Map params) throws Throwable {
+
 	}
 
-	@Override
-	public Object update(Map content, Map params) {
-		// TODO Auto-generated method stub
-		return null;
+	def update(Map content, Map params) {
+		
 	}
 
-	@Override
-	public void delete(Map content, Map params) {
-		// TODO Auto-generated method stub
+	void delete(Map content, Map params) {
+		
+	}
+	
+	def count (Map params) throws Throwable {
 		
 	}
 	

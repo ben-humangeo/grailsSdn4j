@@ -19,7 +19,7 @@ abstract class AbstractRestfulService implements RestfulService {
     }
 
     def count (Map params) throws Throwable {
-        throw new UnsupportedOperationException ()
+        throw new UnsupportedOperationException ("count method was not overriden for service")
     }
 	
 }
