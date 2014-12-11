@@ -44,8 +44,10 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
-	mavenRepo "http://repo.spring.io/libs-release"
-	mavenRepo "http://m2.neo4j.org" 
+		mavenRepo "http://repo.spring.io/libs-release"
+		mavenRepo "http://m2.neo4j.org"
+//		mavenRepo "https://raw.github.com/Sotera/graphene/mvn-repo/"
+//		mavenRepo "https://raw.github.com/Sotera/vande/mvn-repo/"
     }
 
     dependencies {
@@ -54,15 +56,36 @@ grails.project.dependency.resolution = {
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
 	
-	compile "org.springframework:spring-context:jar:4.0.6.RELEASE"
-	compile "org.springframework:spring-tx:jar:4.0.6.RELEASE"
-	compile "org.springframework.data:spring-data-neo4j:jar:3.2.1.RELEASE"
-	compile "org.hibernate:hibernate-validator:jar:5.1.3.Final"
+		compile "org.springframework:spring-context:jar:4.0.6.RELEASE"
+		compile "org.springframework:spring-tx:jar:4.0.6.RELEASE"
+		compile "org.springframework.data:spring-data-neo4j:jar:3.2.1.RELEASE"
+		compile "org.hibernate:hibernate-validator:jar:5.1.3.Final"
+		
+		// ----- GRAPHENE Dependencies
+//		compile "graphene:graphene-analytics:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-dao:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-memorydb:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-dao-neo4j:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-dao-titan:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-dao-sql:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-dao-solr:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-export:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-hts:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-ingest:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-introspect:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-model:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-parent:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-rest:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-search:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-util:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-web:4.1.0-SNAPSHOT"
+//		compile "graphene:graphene-web:jar:classes:4.1.0-SNAPSHOT"
     }
 
     plugins {
         // plugins for the build system only
         build ":tomcat:7.0.55"
+//		build ":maven-war-plugin:2.1.1"
 
         // plugins for the compile step
         compile ":scaffolding:2.1.2"
