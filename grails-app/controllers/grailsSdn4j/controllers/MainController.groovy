@@ -1,6 +1,6 @@
-package grailsSdn4j
+package grailsSdn4j.controllers
 
-import grailsSdn4j.GrailsN4jGraph
+import grailsSdn4j.neo4j.GrailsN4jGraph;
 
 class MainController {
 

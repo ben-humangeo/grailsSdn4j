@@ -1,5 +1,7 @@
 // PersonRepository.java
-package grailsSdn4j;
+package grailsSdn4j.neo4j.repository;
+
+import grailsSdn4j.Person;
 
 import org.springframework.data.repository.CrudRepository;
 

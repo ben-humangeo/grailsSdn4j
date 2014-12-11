@@ -1,5 +1,8 @@
 
-package grailsSdn4j;
+package grailsSdn4j.neo4j;
+
+import grailsSdn4j.Person;
+import grailsSdn4j.neo4j.repository.PersonRepository;
 
 import org.neo4j.graphdb.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
