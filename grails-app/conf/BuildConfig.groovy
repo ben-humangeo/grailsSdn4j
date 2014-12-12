@@ -44,8 +44,8 @@ grails.project.dependency.resolution = {
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
-	mavenRepo "http://repo.spring.io/libs-release"
-	mavenRepo "http://m2.neo4j.org" 
+		mavenRepo "http://repo.spring.io/libs-release"
+		mavenRepo "http://m2.neo4j.org" 
     }
 
     dependencies {
@@ -54,10 +54,10 @@ grails.project.dependency.resolution = {
         // runtime 'org.postgresql:postgresql:9.3-1101-jdbc41'
         test "org.grails:grails-datastore-test-support:1.0-grails-2.4"
 	
-	compile "org.springframework:spring-context:jar:4.0.6.RELEASE"
-	compile "org.springframework:spring-tx:jar:4.0.6.RELEASE"
-	compile "org.springframework.data:spring-data-neo4j:jar:3.2.1.RELEASE"
-	compile "org.hibernate:hibernate-validator:jar:5.1.3.Final"
+		compile "org.springframework:spring-context:jar:4.0.6.RELEASE"
+		compile "org.springframework:spring-tx:jar:4.0.6.RELEASE"
+		compile "org.springframework.data:spring-data-neo4j:jar:3.2.1.RELEASE"
+		compile "org.hibernate:hibernate-validator:jar:5.1.3.Final"
     }
 
     plugins {
